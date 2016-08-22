@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "net.forthought.cordova"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "net.forthought.cordova"
         }
     },
     "dependent_plugins": {}
