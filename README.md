@@ -221,6 +221,36 @@ Now, look at your emulator and you should see the lovely ember welcome page!
 
 Now that you are running in live-reload mode, you can make changes to your app and it will automatically get reloaded in the emulator!
 
+## Concept 1: Adding a splash screen and app icon
+
+### Splashscreen
+
+1. Install the splashscreen plugin
+
+```bash
+ember cdv:plugin add cordova-plugin-splashscreen
+```
+
+2. Add your splashscreen image to `ember-cordova/cordova/res/splash.png`
+
+Note: the name of the image can be whatever you want, but you'll need to update the next step.
+
+3. Update `ember-cordova/cordova/config.xml` and add the following:
+
+```xml
+<splash src="res/splash.png" />
+```
+
+### App icon
+
+1. Create your icon as an SVG file and copy to `ember-cordova/icon.svg`
+
+2. Generate the icons
+
+```bash
+ember cdv:make-icons --platform=android
+```
+
 ## TODO
 
 I plan on adding more steps for the overall development and deployment process, so this will be a WIP.
