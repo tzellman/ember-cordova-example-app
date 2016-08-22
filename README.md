@@ -253,12 +253,34 @@ ember cdv:make-icons --platform=android
 
 ## Concept 2: Dialogs
 
-1. Intall the plugin
+1. Install the plugin
 
 ```bash
 ember cdv:plugin add cordova-plugin-dialogs
 ```
 
+More info [here](https://www.npmjs.com/package/cordova-plugin-dialogs).
+
+2. Interact with the API
+ 
+```js
+    doAlert(){
+        navigator.notification.alert("This is purely a test...", null, "Alert Test", "OK!");
+    }
+```
+
+Also, worthin noting is that I decided to install the `ember-paper` addon, so we can
+start styling our app using material design.
+
+You can add this in your own app:
+
+```bash
+ember install ember-paper
+```
+
+How the app looks now:
+
+![Dialogs](http://i.imgur.com/fLUD88n.png)
 
 ## TODO
 
