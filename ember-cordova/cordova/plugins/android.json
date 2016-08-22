@@ -15,6 +15,9 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "net.forthought.cordova"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "net.forthought.cordova"
         }
     },
     "dependent_plugins": {}

@@ -283,6 +283,17 @@ How the app looks now:
 
 ![Dialogs](http://i.imgur.com/fLUD88n.png)
 
+
+## Concept 3: StatusBar
+
+1. Install the plugin
+
+```bash
+ember cdv:plugin add cordova-plugin-statusbar
+```
+
+More info [here](https://www.npmjs.com/package/cordova-plugin-statusbar).
+
 ## TODO
 
 I plan on adding more steps for the overall development and deployment process, so this will be a WIP.

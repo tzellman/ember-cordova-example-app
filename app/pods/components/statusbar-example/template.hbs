@@ -1,0 +1,9 @@
+{{#if isStatusBarVisible}}
+    {{#paper-button raised=true primary=true onClick=(action 'hide')}}Hide Bar{{/paper-button}}
+{{else}}
+    {{#paper-button raised=true primary=true onClick=(action 'show')}}Show Bar{{/paper-button}}
+
+{{/if}}
+{{#paper-button raised=true primary=true onClick=(action 'toggle')}}Toggle Bar{{/paper-button}}
+{{#paper-button raised=true primary=true onClick=(action 'changeColor')}}Change Bar Color{{/paper-button}}
+{{#paper-button raised=true primary=true onClick=(action 'defaultColor')}}Use Default Color{{/paper-button}}
