@@ -1,0 +1,42 @@
+$primary: "deep-orange";
+$accent: "indigo";
+$warn: "pink";
+@import 'ember-paper';
+
+.dialog-example {
+    button {
+        cursor: pointer;
+    }
+}
+
+.logo {
+    display: inline-block;
+    > a {
+        text-decoration: none;
+        text-transform: uppercase;
+        > * {
+            margin: 0 4px;
+            vertical-align: middle;
+            display: inline;
+        }
+        color: white;
+    }
+}
+
+.nav-main {
+    md-list-item {
+        md-icon {
+            margin: 0;
+        }
+        font-size: larger;
+        font-weight: 600;
+    }
+}
+
+.index {
+    > * {
+        background-color: color($primary, '50');
+        margin: 1rem;
+        padding: 2rem;
+    }
+}

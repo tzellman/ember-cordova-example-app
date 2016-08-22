@@ -12,6 +12,9 @@
         },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "net.forthought.cordova"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "net.forthought.cordova"
         }
     },
     "dependent_plugins": {}

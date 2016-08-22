@@ -1,3 +1,26 @@
-<h1>Welcome to Ember on {{platform}}!</h1>
+{{nav-main onTransition=(action 'transitionTo') isSidenavOpen=isSidenavOpen platform=platform}}
 
-{{outlet}}
+<div class="flex layout-column">
+    {{#paper-toolbar}}
+        {{#paper-toolbar-tools}}
+            {{#paper-button onClick=(action (mut isSidenavOpen)) iconButton=true}}
+                {{paper-icon "menu"}}
+            {{/paper-button}}
+            <h2>
+                {{page-title platform=platform}}
+            </h2>
+            <span class="flex"></span>
+            {{#paper-button iconButton=true}}
+                {{paper-icon "more_vert"}}
+            {{/paper-button}}
+        {{/paper-toolbar-tools}}
+    {{/paper-toolbar}}
+    {{paper-divider}}
+</div>
+
+
+<div class="flex layout-column" style="height:90vh" tabindex="-1" role="main">
+    {{#paper-content flex=true layout-padding=true class="main-content"}}
+        {{outlet}}
+    {{/paper-content}}
+</div>

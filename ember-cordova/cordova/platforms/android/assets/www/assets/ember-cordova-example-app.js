@@ -195,6 +195,75 @@ define("ember-cordova-example-app/instance-initializers/ember-data", ["exports",
     initialize: _emberDataPrivateInstanceInitializersInitializeStoreService["default"]
   };
 });
+define('ember-cordova-example-app/pods/application/controller', ['exports', 'ember'], function (exports, _ember) {
+    var Controller = _ember['default'].Controller;
+    var inject = _ember['default'].inject;
+    var computed = _ember['default'].computed;
+    exports['default'] = Controller.extend({
+
+        platformService: inject.service('device/platform'),
+
+        platform: computed(function () {
+            return this.get('platformService').get('platform');
+        })
+    });
+});
+define("ember-cordova-example-app/pods/application/route", ["exports", "ember", "ember-cordova/mixins/device/splashscreen"], function (exports, _ember, _emberCordovaMixinsDeviceSplashscreen) {
+  var Route = _ember["default"].Route;
+  exports["default"] = Route.extend(_emberCordovaMixinsDeviceSplashscreen["default"], {});
+});
+define("ember-cordova-example-app/pods/application/template", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.7.1",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 0
+          }
+        },
+        "moduleName": "ember-cordova-example-app/pods/application/template.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createElement("h1");
+        var el2 = dom.createTextNode("Welcome to Ember on ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("!");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(2);
+        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 1, 1);
+        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
+        return morphs;
+      },
+      statements: [["content", "platform", ["loc", [null, [1, 24], [1, 36]]], 0, 0, 0, 0], ["content", "outlet", ["loc", [null, [3, 0], [3, 10]]], 0, 0, 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
+});
 define('ember-cordova-example-app/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
   exports['default'] = _emberResolver['default'];
 });
@@ -273,7 +342,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-cordova-example-app/app")["default"].create({"name":"ember-cordova-example-app","version":"0.0.0+4a8a8265"});
+  require("ember-cordova-example-app/app")["default"].create({"name":"ember-cordova-example-app","version":"0.0.1+67270220"});
 }
 
 /* jshint ignore:end */

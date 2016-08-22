@@ -1,0 +1,24 @@
+{{#paper-sidenav-container}}
+    {{#paper-sidenav class="md-whiteframe-z2" lockedOpen="placeholder"
+    open=attrs.isSidenavOpen onToggle=(action (mut attrs.isSidenavOpen)) closeOnClick=false}}
+        {{#paper-toolbar class="layout-align-center-center" tall=false}}
+            {{page-title platform=attrs.platform}}
+        {{/paper-toolbar}}
+        {{#paper-content}}
+            {{#paper-list}}
+                {{#paper-item class="menu-item" onClick=(action attrs.onTransition "index")}}
+                    {{paper-icon "home" class="md-menu-align-target"}}
+                    <div class="md-list-item-text">
+                        Home
+                    </div>
+                {{/paper-item}}
+                {{#paper-item class="menu-item" onClick=(action attrs.onTransition "dialogs")}}
+                    {{paper-icon "widgets" class="md-menu-align-target"}}
+                    <div class="md-list-item-text">
+                        Dialogs Example
+                    </div>
+                {{/paper-item}}
+            {{/paper-list}}
+        {{/paper-content}}
+    {{/paper-sidenav}}
+{{/paper-sidenav-container}}

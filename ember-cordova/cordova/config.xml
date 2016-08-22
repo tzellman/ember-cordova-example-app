@@ -32,4 +32,5 @@
         <splash src="res/splash.png" />
     </platform>
     <plugin name="cordova-plugin-splashscreen" spec="~3.2.2" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.2.1" />
 </widget>
