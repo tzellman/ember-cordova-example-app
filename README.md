@@ -251,6 +251,15 @@ Note: the name of the image can be whatever you want, but you'll need to update 
 ember cdv:make-icons --platform=android
 ```
 
+## Concept 2: Dialogs
+
+1. Intall the plugin
+
+```bash
+ember cdv:plugin add cordova-plugin-dialogs
+```
+
+
 ## TODO
 
 I plan on adding more steps for the overall development and deployment process, so this will be a WIP.

@@ -105,6 +105,24 @@ define('ember-cordova-example-app/tests/helpers/start-app.jshint', ['exports'], 
     assert.ok(true, 'helpers/start-app.js should pass jshint.');
   });
 });
+define('ember-cordova-example-app/tests/pods/application/controller.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | pods/application/controller.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/application/controller.js should pass jshint.');
+  });
+});
+define('ember-cordova-example-app/tests/pods/application/route.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | pods/application/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/application/route.js should pass jshint.');
+  });
+});
 define('ember-cordova-example-app/tests/resolver.jshint', ['exports'], function (exports) {
   'use strict';
 
