@@ -15,3 +15,13 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+# android
+**/platforms/android/libs/
+**/platforms/android/gradle*
+**/platforms/android/.gradle*
+**/platforms/android/local.properties
+**/platforms/android/build.xml
+
+**/tmp-livereload
+**/cordova/www

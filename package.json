@@ -1,7 +1,7 @@
 {
   "name": "ember-cordova-example-app",
-  "version": "0.0.0",
-  "description": "Small description for ember-cordova-example-app goes here",
+  "version": "0.0.1",
+  "description": "Example appliation demonstrating how to use ember-cordova",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -12,11 +12,15 @@
     "start": "ember server",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/tzellman/ember-cordova-example-app",
+  "bugs": {
+    "url": "https://github.com/tzellman/ember-cordova-example-app/issues"
+  },
+  "homepage": "https://github.com/tzellman/ember-cordova-example-app",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Tom Zellman",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
@@ -34,11 +38,16 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
+    "ember-cordova": "0.2.7",
     "ember-data": "^2.7.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
-  }
+  },
+  "keywords": [
+    "ember-cordova",
+    "cordova"
+  ]
 }
