@@ -18,6 +18,7 @@ By default, if you checkout the `master` branch, this will give you the bare-bon
 
 I will have various feature branches that highlight different capabilities/plugins, and will describe those here as they become available.
 
+Additionally, the `develop` branch will have the latest/greatest state of the app, with all demos/plugins enabled.
 
 ## Prerequisites
 
