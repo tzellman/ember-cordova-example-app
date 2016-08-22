@@ -18,6 +18,12 @@
                         Dialogs Example
                     </div>
                 {{/paper-item}}
+                {{#paper-item class="menu-item" onClick=(action attrs.onTransition "statusbar")}}
+                    {{paper-icon "widgets" class="md-menu-align-target"}}
+                    <div class="md-list-item-text">
+                        StatusBar Example
+                    </div>
+                {{/paper-item}}
             {{/paper-list}}
         {{/paper-content}}
     {{/paper-sidenav}}
