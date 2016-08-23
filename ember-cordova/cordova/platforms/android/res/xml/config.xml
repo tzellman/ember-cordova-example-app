@@ -15,6 +15,9 @@
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
     <name>Ember Cordova Example App</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

@@ -40,3 +40,18 @@ $warn: "pink";
         padding: 2rem;
     }
 }
+
+.camera-example {
+    img.taken {
+        margin: 10px auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    &.sepia {
+        img.taken {
+            -webkit-filter: sepia(100%);
+        }
+    }
+}
+

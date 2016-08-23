@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('dialogs');
   this.route('statusbar');
+  this.route('camera');
 });
 
 export default Router;

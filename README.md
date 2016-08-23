@@ -217,6 +217,20 @@ Now, look at your emulator and you should see the lovely ember welcome page!
 
 ![Success](http://i.imgur.com/zTf7ats.png)
 
+If you have an Android device and a good USB cable, just enable USB debugging on the device and you can run your app there instead.
+
+You can monitor your devices with the Android Device Monitor.
+
+```bash
+$ANDROID_HOME/tools/monitor &
+```
+
+Once you're device is visible in the monitor, go ahead and run your app.
+
+```bash
+ember cordova run
+```
+
 
 ## Next Steps for Development
 
@@ -270,7 +284,7 @@ More info [here](https://www.npmjs.com/package/cordova-plugin-dialogs).
     }
 ```
 
-Also, worthin noting is that I decided to install the `ember-paper` addon, so we can
+Also, worth noting is that I decided to install the `ember-paper` addon, so we can
 start styling our app using material design.
 
 You can add this in your own app:
@@ -293,6 +307,23 @@ ember cdv:plugin add cordova-plugin-statusbar
 ```
 
 More info [here](https://www.npmjs.com/package/cordova-plugin-statusbar).
+
+## Concept 4: Camera
+
+1. Install the plugin
+
+```bash
+ember cdv:plugin add cordova-plugin-camera
+```
+
+More info [here](https://www.npmjs.com/package/cordova-plugin-camera).
+
+The "meat" can be demonstrated here: [camera-example/component.js](https://github.com/tzellman/ember-cordova-example-app/blob/develop/app/pods/components/camera-example/component.js).
+
+How the camera demo view looks:
+
+![Camera](http://i.imgur.com/J7QOgmW.png)
+
 
 ## TODO
 
