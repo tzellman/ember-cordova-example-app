@@ -18,7 +18,14 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "net.forthought.cordova"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "net.forthought.cordova"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "net.forthought.cordova"
+        }
+    }
 }

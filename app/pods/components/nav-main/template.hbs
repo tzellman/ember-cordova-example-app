@@ -19,9 +19,15 @@
                     </div>
                 {{/paper-item}}
                 {{#paper-item class="menu-item" onClick=(action attrs.onTransition "statusbar")}}
-                    {{paper-icon "widgets" class="md-menu-align-target"}}
+                    {{paper-icon "view-agenda" class="md-menu-align-target"}}
                     <div class="md-list-item-text">
                         StatusBar Example
+                    </div>
+                {{/paper-item}}
+                {{#paper-item class="menu-item" onClick=(action attrs.onTransition "camera")}}
+                    {{paper-icon "camera_alt" class="md-menu-align-target"}}
+                    <div class="md-list-item-text">
+                        Camera Example
                     </div>
                 {{/paper-item}}
             {{/paper-list}}

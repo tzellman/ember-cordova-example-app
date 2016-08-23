@@ -1,0 +1,7 @@
+{{#paper-button raised=true primary=true onClick=(action 'takePicture')}}Take Picture{{/paper-button}}
+{{#paper-button raised=true primary=true onClick=(action 'selectPicture')}}Select Picture{{/paper-button}}
+{{#paper-button raised=true primary=true onClick=(action 'toggleSepia')}}Toggle Sepia{{/paper-button}}
+
+{{#if image}}
+    <img class="taken" src="data:image/jpeg;base64,{{image}}"/>
+{{/if}}
