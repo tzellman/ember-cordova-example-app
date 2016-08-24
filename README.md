@@ -324,6 +324,22 @@ How the camera demo view looks:
 
 ![Camera](http://i.imgur.com/J7QOgmW.png)
 
+## Concept 5: Toasts
+
+1. Install the plugin
+
+```bash
+ember cdv:plugin add cordova-plugin-x-toast
+```
+
+More info [here](https://www.npmjs.com/package/cordova-plugin-x-toast).
+
+The "meat" can be demonstrated here: [toasts-example/component.js](https://github.com/tzellman/ember-cordova-example-app/blob/develop/app/pods/components/toasts-example/component.js).
+
+How the toasts demo view looks:
+
+![Toasts](http://i.imgur.com/e64cQSU.png)
+
 
 ## TODO
 

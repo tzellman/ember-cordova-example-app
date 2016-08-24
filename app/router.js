@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('dialogs');
   this.route('statusbar');
   this.route('camera');
+  this.route('toasts');
 });
 
 export default Router;
