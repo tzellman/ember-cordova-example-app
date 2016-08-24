@@ -30,6 +30,12 @@
                         Camera Example
                     </div>
                 {{/paper-item}}
+                {{#paper-item class="menu-item" onClick=(action attrs.onTransition "toasts")}}
+                    {{paper-icon "kitchen" class="md-menu-align-target"}}
+                    <div class="md-list-item-text">
+                        Toasts Example
+                    </div>
+                {{/paper-item}}
             {{/paper-list}}
         {{/paper-content}}
     {{/paper-sidenav}}

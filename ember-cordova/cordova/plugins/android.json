@@ -21,6 +21,9 @@
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "net.forthought.cordova"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "net.forthought.cordova"
         }
     },
     "dependent_plugins": {
